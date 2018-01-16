@@ -3,73 +3,105 @@
   <head>
     <title>Fundación Teoxché</title>
     <meta charset="utf-8"/>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/fundacion.css">
   </head>
   <body>
-    <header id="header"> <!-- header -->
-        <figure> <!-- teléfono -->
-            <img src="images/icon_tel.png" height="25px" alt="Logo facebook">
-        </figure>
-        <figure> <!-- ubicación -->
-            <img src="images/icon_ubica.png" height="25px" alt="Logo facebook">
-        </figure>
-        <figure> <!-- logoface -->
-            <img src="images/icon_fb.png" height="25px" alt="Logo facebook">
-        </figure>
-        <figure> <!-- logomail -->
-            <img src="images/icon_mail.png" width="25px" height="" alt="Fundación Teoxché Logotipo">
-        </figure>
-        <figure> <!-- Logotipo -->
+    <header id="header" class="header"> <!-- header -->
+        <div class="contenedor"> <!-- datos importantes -->
+          <figure> <!-- teléfono -->
+              <img src="images/icon_tel.png" height="25px" alt="Logo teléfono"><a> 2268-9432</a>
+          </figure>
+          <figure> <!-- ubicación -->
+              <img src="images/icon_ubica.png" height="25px" alt="Logo ubicación"><a> 8va. calle 4-24 zona 10, Guatemala, Guatemala</a>
+          </figure>
+          <figure> <!-- logoface -->
+              <img src="images/icon_fb.png" height="25px" alt="Logo facebook">
+          </figure>
+          <figure> <!-- logomail -->
+              <img src="images/icon_mail.png" width="25px" height="" alt="Fundación Teoxché Logotipo">
+          </figure>
+        </div>
+    </header>
+    <nav class="menu contenedor"> <!-- menu -->
+        <figure class="logotipo"> <!-- Logotipo -->
             <img src="images/logoft.png" width="205px" height="" alt="Fundación Teoxché Logotipo">
         </figure>
-        <nav> <!-- menu -->
-            <ul>
-                <li>
-                  <a href="">INICIO</a>
-                </li>
-                <li>
-                  <a href="">PROYECTO</a>
-                </li>
-                <li>
-                  <a href="">ACTIVIDADES</a>
-                </li>
-                <li>
-                  <a href="">CALENDARIO</a>
-                </li>
-                <li>
-                  <a href="">NOTICIAS</a>
-                </li>
-                <li>
-                  <a href="">CONTÁCTENOS</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <section id="portada"> <!-- portada -->
-      <h1>Fundación Teoxché</h1><!-- titulo -->
-      <h3>Trabajamos por el Cerrito del Carmen</h3><!-- resumen -->
-      <button>Conoce más</button><!-- boton -->
+        <ul>
+            <li>
+               <a href="index.html">Inicio</a>
+            </li>
+            <li>
+               <a href="#Proyecto">Proyecto</a>
+            </li>
+            <li>
+              <a href="#Actividades">Actividades</a>
+            </li>
+            <li>
+              <a href="#Calendario">Calendario</a>
+            </li>
+            <li>
+              <a href="#Noticias">Noticias</a>
+            </li>
+             <li>
+               <a href="#Contactenos">Contáctenos</a>
+             </li>
+        </ul>
+    </nav>
+    <section id="portada" class="portada"><!-- portada -->
+      <div class="contenedor"> 
+        <h1 class="titulo">Fundación Teoxché</h1><!-- titulo -->
+        <h3 class="titulo-a">Trabajamos por el Cerrito del Carmen</h3><!-- resumen -->
+        <button>Conoce más</button><!-- boton -->
+      </div>
     </section>
-    <section> <!-- bienvenida -->
+    <section id="Bienvenida" class="bienvenida contenedor"> <!-- bienvenida -->
         <h2>Bienvenidos</h2>
-        <article>
+        <article class="quienes_somos">
+          <img class="izquierda" src="images/bienvenida.png" alt="Imagen templo">
+          <div class="contenedor-quienes">  
+            <h3 class="tittle-b">Quiénes somos?</h3>
+            <p>Fundación Teoxché es una organización guatemalteca no lucrativa, que está recuperando el parque del Cerrito del Carmen desde hace más de cinco años, con la visión de devolver a todos los guatemaltecos este parque y único pulmón verde localizado en el Centro Histórico, el cual permitirá a las familias guatemaltecas disfrutar con sus niños de actividades sanas al aire libre.</p>
+          </div>
+        </article>
+<!--       <div class="facebook">
+        <h2>Facebook</h2>
+          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffundacionteoxcheguatemala%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=903310336517380" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+      </div> -->
+    </section>
+    <section id="Proyecto" class="proyecto contenedor">
+        <h2>Proyecto</h2>
+        <article class="proyecto">
           <img src="">
           <h3>Quiénes somos?</h3>
           <p>Fundación Teoxché es una organización guatemalteca no lucrativa, que está recuperando el parque del Cerrito del Carmen desde hace más de cinco años, con la visión de devolver a todos los guatemaltecos este parque y único pulmón verde localizado en el Centro Histórico, el cual permitirá a las familias guatemaltecas disfrutar con sus niños de actividades sanas al aire libre.</p>
         </article>
     </section>
-    <section> <!-- facebook -->
-        <h2>Facebook</h2>
-        <!-- <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffundacionteoxcheguatemala%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=903310336517380" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe> -->
+    <section id="Actividades" class="actividades">
+        <h2>Actividades</h2>
+        <article class="actividades">
+          <img src="">
+          <h3>Quiénes somos?</h3>
+          <p>Fundación Teoxché es una organización guatemalteca no lucrativa, que está recuperando el parque del Cerrito del Carmen desde hace más de cinco años, con la visión de devolver a todos los guatemaltecos este parque y único pulmón verde localizado en el Centro Histórico, el cual permitirá a las familias guatemaltecas disfrutar con sus niños de actividades sanas al aire libre.</p>
+        </article>
     </section>
-    <section> <!-- mensaje -->
-        <h2>El Proyecto</h2>
-        <p>Estamos trabajando para hacer del parque del Cerrito del Carmen un lugar amigable, que contribuya al medio ambiente, al desarrollo social y cultural, para que los vecinos y los guatemaltecos en general, vivan nuevamente este espacio al aire libre, que está estratégicamente ubicado en el corazón del Centro Histórico y que les permita disfrutar de distracciones sanas tan necesarias hoy en día para nuestra sociedad.</p>
-        <figure>
-          <img src="images/logoft.png" width="" height="" alt="Fundación Teoxché Logotipo">
-        </figure>
+    <section id="Calendario" class="calendario">
+        <h2>Calendario</h2>
+        <article class="calendario">
+          <img src="">
+          <h3>Quiénes somos?</h3>
+          <p>Fundación Teoxché es una organización guatemalteca no lucrativa, que está recuperando el parque del Cerrito del Carmen desde hace más de cinco años, con la visión de devolver a todos los guatemaltecos este parque y único pulmón verde localizado en el Centro Histórico, el cual permitirá a las familias guatemaltecas disfrutar con sus niños de actividades sanas al aire libre.</p>
+        </article>
+    </section>
+    <section id="Noticias" class="noticias">
+        <h2>Noticias</h2>
+        <article class="noticias">
+          <img src="">
+          <h3>Quiénes somos?</h3>
+          <p>Fundación Teoxché es una organización guatemalteca no lucrativa, que está recuperando el parque del Cerrito del Carmen desde hace más de cinco años, con la visión de devolver a todos los guatemaltecos este parque y único pulmón verde localizado en el Centro Histórico, el cual permitirá a las familias guatemaltecas disfrutar con sus niños de actividades sanas al aire libre.</p>
+        </article>
     </section>
     <footer>
-        
     </footer>
   </body>
  </html>
